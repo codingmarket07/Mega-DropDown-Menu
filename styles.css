@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Mountains+of+Christmas&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: #fad8bc;
+}
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper ul {
+  width: 400px;
+  height: 65px;
+  display: flex;
+}
+
+.wrapper ul li {
+  width: 100px;
+  background: #3b3b5d;
+  text-align: center;
+  height: 65px;
+  padding: 10px 0;
+  position: relative;
+  border-right: 1px solid #fff;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:last-child {
+  border-right: 0;
+}
+
+.wrapper ul li:hover {
+  background: #707086;
+}
+
+.wrapper ul li a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.wrapper ul li a img {
+  width: 30px;
+}
+
+.wrapper ul li .submenu {
+  width: 300px;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.wrapper ul li .submenu:before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid;
+  border-color: transparent transparent #3b3b5d transparent;
+}
+
+.wrapper ul li .submenu img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: block;
+}
+
+.wrapper ul li .submenu ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.wrapper ul li .submenu ul li {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.wrapper ul li .submenu ul li:hover {
+  background: #3b3b5d;
+}
+
+.wrapper ul li .submenu ul li:hover a {
+  color: #fff;
+}
+
+.wrapper ul li .submenu ul li a {
+  padding: 10px;
+  display: block;
+  color: #707086;
+}
+
+.wrapper ul li .submenu ul li:last-child {
+  border-bottom: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper ul li:hover .submenu {
+  display: block;
+}
+
+.wrapper ul li .submenu .img_container {
+  position: relative;
+}
+
+.wrapper ul li .submenu .img_container .holder {
+  font-family: "Mountains of Christmas", cursive;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 99;
+  background: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.wrapper ul li .submenu .img_container .holder img {
+  margin-right: 5px;
+}
